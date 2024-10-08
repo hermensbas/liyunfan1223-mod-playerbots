@@ -4284,6 +4284,12 @@ bool PlayerbotAI::AllowActive(ActivityType activityType)
         }
     }
 
+    
+    if (!sPlayerbotAIConfig->botActiveAloneSmartScale)
+    {
+        return false; // no smart scaling
+    }
+
     // GetPriorityBracket acitivity
     std::pair<uint8, uint8> priorityBracket = GetPriorityBracket(type);
     if (!priorityBracket.second)

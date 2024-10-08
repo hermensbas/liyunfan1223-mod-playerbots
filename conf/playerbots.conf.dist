@@ -1462,6 +1462,10 @@ AiPlayerbot.RandombotsWalkingRPG.InDoors = 0
 # The default is 10. With 10% of all bots going active or inactive each minute.
 AiPlayerbot.BotActiveAlone = 100
 
+# Specify SmartScaling for the 'BotActiveAlone' value enabled or disabled.
+# The default is 1. A scaling bracket is applied based on the activity of the bot.
+botActiveAloneSmartScale=1
+
 # Premade spell to avoid (undetected spells)
 # spellid-radius, ...
 AiPlayerbot.PremadeAvoidAoe = 62234-4
